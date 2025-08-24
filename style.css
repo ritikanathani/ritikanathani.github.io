@@ -1,38 +1,47 @@
-/* Reset some defaults */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: #0d1117;
   color: #e6edf3;
   line-height: 1.6;
 }
 
-/* Navigation */
+/* Navbar */
 nav {
+  background: #161b22;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
-  background-color: #161b22;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
 }
 
-nav a {
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
   color: #e6edf3;
   text-decoration: none;
-  margin-left: 20px;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #58a6ff;
 }
 
@@ -44,84 +53,55 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  background: linear-gradient(to right, #0d1117, #161b22);
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  color: #58a6ff;
 }
 
-.hero h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #8b949e;
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #c9d1d9;
 }
 
-/* Sections */
+/* Section */
 section {
-  padding: 80px 20px;
+  padding: 6rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-h2.section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #58a6ff;
-}
-
-/* Projects Grid */
+/* Projects */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 2rem;
 }
 
 .project-card {
-  background-color: #161b22;
-  padding: 20px;
+  background: #161b22;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
-  margin-bottom: 10px;
-  color: #e6edf3;
-}
-
-.project-card p {
-  font-size: 0.9rem;
-  color: #8b949e;
-}
-
-/* Contact Section */
-.contact {
-  text-align: center;
-}
-
-.contact a {
+  margin-bottom: 1rem;
   color: #58a6ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   background: #161b22;
-  margin-top: 50px;
-  font-size: 0.85rem;
   color: #8b949e;
 }
