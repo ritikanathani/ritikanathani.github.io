@@ -8,23 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navigation -->
-  <header>
-    <nav>
-      <h1 class="logo">Ritika Nathani</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h1 class="logo">Ritika Nathani</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Hello, I’m <span>Ritika Nathani</span></h2>
-      <p>Aspiring Cybersecurity Professional | AWS Certified Cloud Practitioner</p>
+      <h1>Hello, I’m <span id="typing"></span></h1>
+      <p>Aspiring Cybersecurity Professional | AWS Cloud Practitioner</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
@@ -42,24 +41,19 @@
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Bash Script for System Monitoring</h3>
+      <div class="project-card"> <h3>Bash Script for System Monitoring</h3>
         <p>Automated CPU, disk, and process monitoring with logging and cron job scheduling.</p>
       </div>
-      <div class="project-card">
-        <h3>Terraform AWS Infrastructure</h3>
+      <div class="project-card"> <h3>Terraform AWS Infrastructure</h3>
         <p>Provisioned EC2, S3, and IAM role using Infrastructure as Code (IaC).</p>
       </div>
-      <div class="project-card">
-        <h3>Network Traffic Analysis Tool</h3>
+      <div class="project-card"> <h3>Network Traffic Analysis Tool</h3>
         <p>Analyzed firewall/router/IDS logs using Python and k-means clustering for anomaly detection.</p>
       </div>
-      <div class="project-card">
-        <h3>Threat Detection Automation</h3>
+      <div class="project-card"> <h3>Threat Detection Automation</h3>
         <p>Built dashboard with MITRE ATT&CK and ML classifier for real-time attack detection.</p>
       </div>
-      <div class="project-card">
-        <h3>API Testing - Spotify Application</h3>
+      <div class="project-card"> <h3>API Testing - Spotify Application</h3>
         <p>Validated API security and performance with OAuth 2.0 and Postman automation.</p>
       </div>
     </div>
@@ -68,10 +62,10 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>Let’s connect! Reach out to me via:</p>
+    <p>Reach me via:</p>
     <ul>
-      <li>Email: <a href="mailto:ritika.nathani08@gmail.com">ritikanathani@example.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/ritika-nathani/" target="_blank">linkedin.com/in/ritikanathani</a></li>
+      <li>Email: <a href="mailto:ritikanathani@example.com">ritikanathani@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/ritikanathani" target="_blank">linkedin.com/in/ritikanathani</a></li>
       <li>GitHub: <a href="https://github.com/ritikanathani" target="_blank">github.com/ritikanathani</a></li>
     </ul>
   </section>
@@ -80,5 +74,30 @@
   <footer>
     <p>© 2025 Ritika Nathani. All Rights Reserved.</p>
   </footer>
+
+  <!-- JavaScript for typing animation -->
+  <script>
+    const texts = ["Ritika Nathani", "Cybersecurity Analyst", "AWS Cloud Practitioner"];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+
+    (function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.getElementById('typing').textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1500);
+      } else {
+        setTimeout(type, 150);
+      }
+    }());
+  </script>
+
 </body>
 </html>
