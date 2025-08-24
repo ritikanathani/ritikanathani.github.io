@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ritika Nathani - Cybersecurity & Dev Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritika Nathani | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">Ritika Nathani</a>
-      <ul class="nav-links">
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1 class="logo">Ritika Nathani</h1>
+      <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#work">What I Do</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Hi, I’m Ritika</h1>
-      <p>Aspiring Cybersecurity Analyst by day, Creator & Automator by night.</p>
-    </div>
+    </nav>
   </header>
 
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m passionate about understanding and securing systems—from network monitoring and incident response to automation and cloud tooling. With practical experience in vulnerability detection, security automation, and threat analysis, I’m driven by curiosity and the desire to build safer digital environments.
-      </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I’m <span>Ritika Nathani</span></h2>
+      <p>Aspiring Cybersecurity Professional | AWS Certified Cloud Practitioner</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
-  <section id="work" class="section work">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Offensive Security Research</h3>
-          <p>Penetration testing across web apps, APIs, and infrastructure—identifying vulnerabilities, developing POCs, and driving secure remediation.</p>
-        </div>
-        <div class="card">
-          <h3>Security Automation & DevTools</h3>
-          <p>Scripts, tools, or CI/CD pipelines that streamline reconnaissance, scanning, and protection workflows.</p>
-        </div>
-        <div class="card">
-          <h3>Logging & Threat Detection</h3>
-          <p>Leveraging tools like Splunk, QRadar, or Indeni to detect anomalies and proactively safeguard systems in cloud or on-prem environments.</p>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am passionate about cybersecurity and cloud technologies, with hands-on experience in system operations, security monitoring, 
+      and automation projects. I enjoy solving problems, learning continuously, and working with teams to strengthen security.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Bash Script for System Monitoring</h3>
+        <p>Automated CPU, disk, and process monitoring with logging and cron job scheduling.</p>
+      </div>
+      <div class="project-card">
+        <h3>Terraform AWS Infrastructure</h3>
+        <p>Provisioned EC2, S3, and IAM role using Infrastructure as Code (IaC).</p>
+      </div>
+      <div class="project-card">
+        <h3>Network Traffic Analysis Tool</h3>
+        <p>Analyzed firewall/router/IDS logs using Python and k-means clustering for anomaly detection.</p>
+      </div>
+      <div class="project-card">
+        <h3>Threat Detection Automation</h3>
+        <p>Built dashboard with MITRE ATT&CK and ML classifier for real-time attack detection.</p>
+      </div>
+      <div class="project-card">
+        <h3>API Testing - Spotify Application</h3>
+        <p>Validated API security and performance with OAuth 2.0 and Postman automation.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:ritikanathani@example.com">ritikanathani@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/ritikanathani" target="_blank">linkedin.com/in/ritikanathani</a></p>
-      <p>GitHub: <a href="https://github.com/ritikanathani" target="_blank">github.com/ritikanathani</a></p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! Reach out to me via:</p>
+    <ul>
+      <li>Email: <a href="mailto:ritikanathani@example.com">ritikanathani@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/ritikanathani" target="_blank">linkedin.com/in/ritikanathani</a></li>
+      <li>GitHub: <a href="https://github.com/ritikanathani" target="_blank">github.com/ritikanathani</a></li>
+    </ul>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Ritika Nathani</p>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ritika Nathani. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
