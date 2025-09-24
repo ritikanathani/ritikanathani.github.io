@@ -502,15 +502,15 @@
 
             /* Buttons */
 
-            .tm_dot-box {
+            .rn_dot-box {
                 pointer-events: none;
             }
 
-            .tm_dot-box.solid .tm_dot {
+            .rn_dot-box.solid .rn_dot {
                 background-color: currentColor;
             }
 
-            .tm_dot-box.stroke .tm_dot {
+            .rn_dot-box.stroke .rn_dot {
                 border: 2px solid currentColor;
                 opacity: 1;
                 width: 100%;
@@ -1313,15 +1313,15 @@ height="0" width="0" style="display:none;visibility:hidden">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous">
     </script>
 
-    <!-- TM Reveal -->
+    <!-- RN Reveal -->
     <script>
         var currentscrollpos;
         var responsive = '(max-width: 991px)'
         $(document).ready(function() {
-            $(".tm_block").on('click', function() {
-                var get = $(this).attr("tm-reveal");
-                var find = $(`.mobile-reveal_row[tm-reveal=${get}]`);
-                var scrollTo = $(this).closest(`#tm-reveal_${get}`);
+            $(".rn_block").on('click', function() {
+                var get = $(this).attr("rn-reveal");
+                var find = $(`.mobile-reveal_row[rn-reveal=${get}]`);
+                var scrollTo = $(this).closest(`#rn-reveal_${get}`);
                 console.log(get);
                 console.log(find);
                 console.log(scrollTo);
@@ -1427,6 +1427,7 @@ height="0" width="0" style="display:none;visibility:hidden">
 </body>
 
 </html>
+
 
 
 
